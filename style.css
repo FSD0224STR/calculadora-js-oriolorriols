@@ -1,0 +1,56 @@
+body{
+    background-color:#505050;
+    color: white;
+}
+
+input{
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+}
+
+
+input#screen{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+input#sreenSecondary{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 2px;
+    background-color: #383B43;
+    color: white;
+    box-shadow: 2px 2px 0px 0px #7a7f8a;
+}
+
+
+button:hover{
+    background-color: #616368;
+    
+}
+
+
+button[onclick="onClickResult()"]{
+    background-color: #47B1E9;
+}
+
+
+button[onclick="onClickResult()"]:hover{
+    background-color: #8ed0f3;
+    
+}
+
+
+.active{
+    background-color: blue;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" crossorigin="anonymous" />
+
+    <title>JS Calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="row d-flex justify-content-center m-5">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-12 text p-1">
+                  <h2>JS Calculator</h2>
+              </div>
+            </div>
+             
+             <div class="row">
+              <div id="calculator" class="p-1">
+                <input id="screenSecondary" class="col-12 text-end px-2"  type="text" value="" disabled/>
+                <input id="screen" class="col-12 text-end px-2"  type="text" value="0" disabled/>
+              </div>
+            </div>
+
+            <div class="row justify-content-end">
+              <div class="col-6 p-1"><button onclick="globalReset()">C</button></div>  
+              <div class="col-3 p-1"><button onclick="eraseLastNumber()">⌫</button></div>  
+              <div class="col-3 p-1"><button class="" id="operatordivide" onclick="onClickOperator('/')">/</button></div>
+              
+            </div>
+
+            <div class="row">
+              <div class="col-3 p-1"><button onclick="onClickNumber('7')">7</button></div>
+              <div class="col-3 p-1"><button onclick="onClickNumber('8')">8</button></div>
+              <div class="col-3 p-1"><button onclick="onClickNumber('9')">9</button></div>
+              <div class="col-3 p-1"><button class=""  id="operatormultiply" onclick="onClickOperator('*')">*</button></div>
+                
+            </div>
+
+            <div class="row">
+              <div class="col-3 p-1"><button onclick="onClickNumber('4')">4</button></div>
+              <div class="col-3 p-1"><button onclick="onClickNumber('5')">5</button></div>
+              <div class="col-3 p-1"><button onclick="onClickNumber('6')">6</button></div>
+              <div class="col-3 p-1"><button class="" id="operatorminus" onclick="onClickOperator('-')">-</button></div>
+            </div>
+
+            <div class="row">
+              <div class="col-3 p-1"><button onclick="onClickNumber('1')">1</button></div>
+              <div class="col-3 p-1"><button onclick="onClickNumber('2')">2</button></div>
+              <div class="col-3 p-1"><button onclick="onClickNumber('3')">3</button></div>
+              <div class="col-3 p-1"><button class="" id="operatoradd" onclick="onClickOperator('+')">+</button></div>
+            </div>
+
+            <div class="row">
+              
+              <div class="col-9 p-1"><button onclick="onClickNumber('0')">0</button></div>
+              <div class="col-3 p-1"><button onclick="onClickResult()">=</button></div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
